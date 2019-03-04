@@ -57,22 +57,29 @@ function Header () {
   return (
     <Nav>
       <NavHeader>
+        
         <NavLeft>Stylagram</NavLeft>
+
         <NavCenter>
           <Input type="text" placeholder="Search" />
         </NavCenter>
+
         <NavRight>
+
           <MenuLink href="#">
             <Compass />
           </MenuLink>
+
           <MenuLink href="#">
             <Explore />
           </MenuLink>
+
           <MenuLink href="#">
             <Avatar />
           </MenuLink>
           
         </NavRight>
+
       </NavHeader>
     </Nav>
   )
