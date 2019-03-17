@@ -11,7 +11,7 @@ const feedsource = [
     id: 0
   },
   {
-    source: 'https://scontent-lhr3-1.cdninstagram.com/vp/e04efda2c540395021c64bd2b199eb14/5C7E0E30/t51.2885-15/e15/14240675_192169101203223_495226036_n.jpg?_nc_ht=scontent-lhr3-1.cdninstagram.com',
+    source: 'https://scontent-lhr3-1.cdninstagram.com/vp/f14456c901b071f5367c4a6032ec48b6/5C900EF8/t51.2885-15/e15/s320x320/14240675_192169101203223_495226036_n.jpg?_nc_ht=scontent-lhr3-1.cdninstagram.com',
     likes: '313',
     comments: '10',
     isVideo: true,
@@ -73,33 +73,33 @@ const ProfileDetailsUsername = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  button {
-    background-color: transparent;
-    border: 1px solid #dbdbdb;
-    color: #262626;
-    border-radius: 4px;
-    outline: none;
-    cursor: pointer;
-    font-weight: 600;
-    padding: 5px 9px;
-    text-transform: capitalize;
-    font-size: 14px;
-    margin-left: 20px;
-  }
 `
+
+const EditProfileButton = styled.div`
+  background-color: transparent;
+  border: 1px solid #dbdbdb;
+  color: #262626;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-left: 20px;
+`
+
+const HeadingThreeText = styled.h3``
+const ParagraphText = styled.p`
+  margin-right: 25px;
+`
+
 const ProfileDetailsMeta = styled.div`
   display: flex;
   justify-content: center;
-  p {
-    margin-right: 25px;
-  }
 `
 const ProfileDetailsName = styled.div`
   text-align: left;
-  p {
-    text-align: center;
-  }
 `
 
 const ImagesWrapper = styled.div`
@@ -119,18 +119,18 @@ function Profile () {
         <ProfileDetailsRight>
 
           <ProfileDetailsUsername>
-            <h3>yomieluwande</h3>
-            <button>Edit profile</button>
+            <HeadingThreeText>yomieluwande</HeadingThreeText>
+            <EditProfileButton>Edit profile</EditProfileButton>
           </ProfileDetailsUsername>
 
           <ProfileDetailsMeta>
-            <p><strong>5</strong> posts</p>
-            <p><strong>296</strong> followers</p>
-            <p><strong>269</strong> following</p>
+            <ParagraphText><strong>5</strong> posts</ParagraphText>
+            <ParagraphText><strong>296</strong> followers</ParagraphText>
+            <ParagraphText><strong>269</strong> following</ParagraphText>
           </ProfileDetailsMeta>
 
           <ProfileDetailsName>
-            <p><strong>Yomi</strong></p>
+            <ParagraphText><strong>Yomi</strong></ParagraphText>
           </ProfileDetailsName>
 
         </ProfileDetailsRight>
